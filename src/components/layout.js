@@ -9,6 +9,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+// Import pour l'authentification
+import { 
+  IdentityModal, 
+  useIdentityContext, 
+  IdentityContextProvider 
+} from 'react-netlify-identity-widget'
+import 'react-netlify-identity-widget/styles.css'
+import "@reach/tabs/styles.css"
+
 import Header from "./header"
 import "./layout.css"
 
