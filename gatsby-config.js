@@ -18,9 +18,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `categories`,
+        path: `${__dirname}/categories`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://thirsty-mestorf-e0ce8c.netlify.app/`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

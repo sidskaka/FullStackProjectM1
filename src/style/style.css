@@ -1,0 +1,23 @@
+li {
+    display: inline;
+    padding: 18px;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    margin-left: -25px;
+}
+
+div.first-div {
+    float: left;
+
+}
+
+div h4 a {
+    color: #fff; 
+    margin-left: 25%;
+}

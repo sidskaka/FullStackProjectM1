@@ -9,9 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-//import { IdentityModal, useIdentityContext, IdentityContextProvider } from 'react-netlify-identity-widget'
-
-import Menu from "./menu"
+import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -24,11 +22,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  //const identity = useIdentityContext()
 
   return (
     <>
-      <Menu />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
