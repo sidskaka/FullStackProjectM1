@@ -6,5 +6,5 @@ image: /assets/person.png
 couleur: Jaune
 taille: "0.3"
 categorie: categorie-1
-path: product-1
+path: product-2
 ---
