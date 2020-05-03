@@ -19,5 +19,10 @@ div.first-div {
 
 div h4 a {
     color: #fff; 
-    margin-left: 25%;
+    margin-left: 22%;
+}
+
+a.lien-retour {
+    color: #000;
+    text-decoration: none;
 }

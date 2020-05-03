@@ -7,38 +7,43 @@ const products = ({ data }) => {
     return (
         <div className="products__grid">
             {
-                data.allMarkdownRemark.nodes.map(({ frontmatter }, index) => (
+                data.allMarkdownRemark.nodes.map(({ frontmatter, id }, index) => (
                     <div className="product__item" key={index}>
                         <img src={ frontmatter.image } alt={frontmatter.title} />
                         <h2>
                             { frontmatter.title }
                         </h2>
-                        <p className="product__price">
-                            { frontmatter.price }
-                        </p>
-                        <div className="product__description">
-                            { frontmatter.description }
-                        </div>
-                    </div>
+                        <h4>
+                            <a className="lien-retour" href={`/productTemplate/detail-product?code=${id}`}>Détail du produit</a>
+                        </h4>
+                    </div>    
                 ))
             }
+
+            <h4>
+                <a className="lien-retour" href="/">
+                    Retour à l'accueil
+                </a>
+            </h4>
         </div>
     )
 }
 
 export const query = graphql`
-    query MyQuery {
+    query products {
         allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/products/"}}) {
             nodes {
                 frontmatter {
                     description
                     title
                     path
-                    image
-                    taille
-                    couleur
                     categorie
+                    couleur
+                    image
+                    price
+                    taille
                 }
+                id
             }
         }
     }

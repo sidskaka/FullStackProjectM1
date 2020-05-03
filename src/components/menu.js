@@ -27,7 +27,7 @@ const Header = () => {
                         <li><a href="#">Accueil</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Catalogue</a></li>
-                        <li><a href="#">Article</a></li>
+                        <li><a href="/categories/">Catégorie</a></li>
                         <li><a href="/products/">Produit</a></li>
                         <li><a href="#">Mon compte</a></li>
                         <li><a href="#">Blog</a></li>
