@@ -8,21 +8,42 @@ li a {
     text-decoration: none;
 }
 
+li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
 nav {
     margin-left: -25px;
 }
 
 div.first-div {
     float: left;
-
 }
 
 div h4 a {
-    color: #fff; 
+    color: #000 !important;
     margin-left: 22%;
+    font-size: 66%;
+}
+
+.second-div h4 a {
+    color: #fff !important;
+    margin-left: 18%;
+    font-size: 66%;
+}
+
+.second-div {
+    width: 20%;
+    float: right;
+    margin-top: -6px;
 }
 
 a.lien-retour {
     color: #000;
+    text-decoration: none;
+}
+
+.detail-product a:hover {
     text-decoration: none;
 }
