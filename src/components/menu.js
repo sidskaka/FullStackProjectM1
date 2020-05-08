@@ -31,7 +31,7 @@ const Header = () => {
                         <li><a href="/categories/">Catégorie</a></li>
                         <li><a href="/products/">Produit</a></li>
                         <li><a href="#">Mon compte</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="/liste-blog">Blog</a></li>
                     </ul>
                 </div>
                 <div className="second-div">
